@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <dialog class="infoModal">
+        <div class="top">
+            <h2>Information</h2>
+            <button class="closeInfo" type="button">X</button>
+        </div>
+        <h1 class="infoTitle"></h1>
+        <h3 class="info"></h3>
+    </dialog>
+    <dialog class="addModal">
+        <form class="addForm">
+            <div class="top">
+                <h2>Task</h2>
+                <button class="close" type="button">X</button>
+            </div>
+            <label>Title</label>
+            <input type="text" name="addTitle" placeholder="Placeholder text">
+            <label>Description</label>
+            <textarea name="addInfo" placeholder="Placeholder text"></textarea>
+            <div>
+                <button class="btn seve-btn">SAVE</button>
+                <button class="btn cancelBtn" type="button">CANCEL</button>
+            </div>
+        </form>
+    </dialog>
+    <dialog class="editModal">
+        <form class="editForm">
+            <div class="top">
+                <h2>Task</h2>
+                <button class="closeEdit" type="button">X</button>
+            </div>
+            <label>Title</label>
+            <input type="text" name="editTitle" placeholder="Placeholder text">
+            <label>Description</label>
+            <textarea name="editInfo" placeholder="Placeholder text"></textarea>
+            <div>
+                <button class="btn edit-btn">SAVE</button>
+                <button class="btn cancelEdit" type="button">CANCEL</button>
+            </div>
+        </form>
+    </dialog>
+    <nav>
+        <h1>TODO</h1>
+        <button class="addBtn">+</button>
+    </nav>
+    <main>
+        <div class="left">
+            <div class="search-div">
+                <input type="search" class="inpSearch" placeholder="search...">
+            </div>
+            <div class="select-div">
+                <select class="selectStatus">
+                    <option value="all">All</option>
+                    <option value="true">Active</option>
+                    <option value="false">Inactive</option>
+                </select>
+            </div>
+        </div>
+        <div class="right">
+
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
